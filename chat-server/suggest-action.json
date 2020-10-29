@@ -1,0 +1,79 @@
+{
+  "info": {
+    "_postman_id": "75d95d45-3af2-4334-9fa6-c93a1336ec77",
+    "name": "suggest-action",
+    "description": "These APIs are called by integrated Bots to manage an ongoing conversation. For example,\n1. **handoff** - Handoff to a human agent\n2. **end-conversation** - instructs to end an ongoing conversation.\n3. **Send Message** - send a message in an ongoing conversation to the customer.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "handoff",
+      "_postman_id": "f3071f67-b196-499e-9296-965b178f4b51",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"conversationId\": \"r2sMA-HuwV\",\r\n    \"type\": \"Action\",\r\n    \"action_name\": \"HANDOFF\",\r\n    \"from\": {\r\n        \"id\": \"bot\",\r\n        \"name\": \"EF Bot\",\r\n        \"type\": \"BOT\"\r\n    },\r\n    \"timestamp\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://192.168.2.83/chat/api/message/suggest-action",
+        "description": "action_name must be set to **HANDOFF**"
+      },
+      "response": []
+    },
+    {
+      "name": "end-conversation",
+      "_postman_id": "363c97e8-f80f-4109-90fb-7b2cf522468c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"conversationId\": \"r2sMA-HuwV\",\r\n    \"type\": \"Action\",\r\n    \"action_name\": \"END_CONVERSATION\",\r\n    \"from\": {\r\n        \"id\": \"bot\",\r\n        \"name\": \"EF Bot\",\r\n        \"type\": \"BOT\"\r\n    },\r\n    \"timestamp\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://192.168.2.83/chat/api/message/suggest-action",
+        "description": "action_name must be set to **END_CONVERSATION**"
+      },
+      "response": []
+    },
+    {
+      "name": "send message",
+      "_postman_id": "5e939c86-19f2-4260-aad0-0bad16b48454",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"conversationId\": \"r2sMA-HuwV\",\r\n    \"messageId\": \"\",\r\n    \"type\": \"Message\",\r\n    \"action_name\": \"ChatMessage\",\r\n    \"from\": {\r\n        \"id\": \"bot\",\r\n        \"name\": \"EF Bot\",\r\n        \"type\": \"Bot\"\r\n    },\r\n    \"text\": \"Hello, I am a bot\",\r\n    \"timestamp\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://192.168.2.83/chat/api/message/suggest-action",
+        "description": "- action_name must be set to END_CONVERSATION\n- text - can be any formatted text message "
+      },
+      "response": []
+    }
+  ]
+}
