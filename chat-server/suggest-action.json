@@ -8,7 +8,7 @@
   "item": [
     {
       "name": "handoff",
-      "_postman_id": "f3071f67-b196-499e-9296-965b178f4b51",
+      "id": "f3071f67-b196-499e-9296-965b178f4b51",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -17,7 +17,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"conversationId\": \"r2sMA-HuwV\",\r\n    \"type\": \"Action\",\r\n    \"action_name\": \"HANDOFF\",\r\n    \"from\": {\r\n        \"id\": \"bot\",\r\n        \"name\": \"EF Bot\",\r\n        \"type\": \"BOT\"\r\n    },\r\n    \"timestamp\": \"\"\r\n}",
+          "raw": "{\r\n    \"conversationId\": \"Owl_9wH3RWlzGZA_wEcF3\",\r\n    \"type\": \"Action\",\r\n    \"action_name\": \"HANDOFF\",\r\n    \"from\": {\r\n        \"id\": \"bot\",\r\n        \"name\": \"EF Bot\",\r\n        \"type\": \"BOT\"\r\n    },\r\n    \"queue\":\"test\",\r\n    \"timestamp\": \"\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -31,7 +31,7 @@
     },
     {
       "name": "end-conversation",
-      "_postman_id": "363c97e8-f80f-4109-90fb-7b2cf522468c",
+      "id": "363c97e8-f80f-4109-90fb-7b2cf522468c",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -54,7 +54,7 @@
     },
     {
       "name": "send message",
-      "_postman_id": "5e939c86-19f2-4260-aad0-0bad16b48454",
+      "id": "5e939c86-19f2-4260-aad0-0bad16b48454",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
