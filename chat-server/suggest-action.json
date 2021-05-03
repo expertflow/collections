@@ -8,7 +8,7 @@
   "item": [
     {
       "name": "handoff",
-      "_postman_id": "f3071f67-b196-499e-9296-965b178f4b51",
+      "id": "f3071f67-b196-499e-9296-965b178f4b51",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -25,13 +25,13 @@
           }
         },
         "url": "https://192.168.2.56/chat/api/message/suggest-action",
-        "description": "action_name must be set to **HANDOFF**"
+        "description": "type must be set to **Action**\naction_name must be set to **HANDOFF**\n**queue** parameter is optional, pass the queue name to which this chat should be transferred."
       },
       "response": []
     },
     {
       "name": "end-conversation",
-      "_postman_id": "363c97e8-f80f-4109-90fb-7b2cf522468c",
+      "id": "363c97e8-f80f-4109-90fb-7b2cf522468c",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -54,7 +54,7 @@
     },
     {
       "name": "send message",
-      "_postman_id": "5e939c86-19f2-4260-aad0-0bad16b48454",
+      "id": "5e939c86-19f2-4260-aad0-0bad16b48454",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -71,7 +71,7 @@
           }
         },
         "url": "https://192.168.2.83/chat/api/message/suggest-action",
-        "description": "- action_name must be set to END_CONVERSATION\n- text - can be any formatted text message "
+        "description": "- type must be set to **Message**\n- action_name must be set to **ChatMessage**\n- text - can be any formatted text message"
       },
       "response": []
     }
